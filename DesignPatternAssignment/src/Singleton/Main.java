@@ -3,7 +3,7 @@ package Singleton;
 public class Main {
 
     public static void main(String[] args) {
-        ChocolateMaker chocolateMaker = ChocolateMaker.getChocolateMaker();
+        ChocolateMaker chocolateMaker = ChocolateMaker.getChocolateMaker("name");
 
         chocolateMaker.isMade();
     }

@@ -1,14 +1,20 @@
 package Singleton;
 
 public class ChocolateMaker {
-    private static ChocolateMaker chocolateMaker = new ChocolateMaker();
-    private ChocolateMaker(){}
+    private String name;
+    private static final ChocolateMaker chocolateMaker = new ChocolateMaker();
+    private ChocolateMaker(String name){
+        this.name = name;
+    }
+    public String getName()
+    {
+        return this.name;
+    }
     public boolean checkIfNull(){
         return  this.chocolateMaker != null ? true : false;
     }
-    public static ChocolateMaker getChocolateMaker(){
+    public static ChocolateMaker getChocolateMaker(String name){
         if(chocolateMaker.checkIfNull()){
-            System.out.println("Object created");
             return chocolateMaker;
         }
         System.out.println("Object was not created");
