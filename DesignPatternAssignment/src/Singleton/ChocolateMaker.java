@@ -1,9 +1,9 @@
 package Singleton;
 
 public class ChocolateMaker {
-    private String name;
+    private static String name;
     private static final ChocolateMaker chocolateMaker = new ChocolateMaker();
-    private ChocolateMaker(String name){
+    private ChocolateMaker(){
         this.name = name;
     }
     public String getName()
