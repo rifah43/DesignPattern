@@ -8,8 +8,10 @@ public class ChocolateMaker {
     }
     public static ChocolateMaker getChocolateMaker(){
         if(chocolateMaker.checkIfNull()){
+            System.out.println("Object created");
             return chocolateMaker;
         }
+        System.out.println("Object was not created");
         return null;
     }
     public static WhiteChocolate makeWhiteChocolate() {
@@ -37,6 +39,9 @@ public class ChocolateMaker {
         whiteChocolate.addMilk(.5F);
         plainChocolate.mixAll();
         return plainChocolate;
+    }
+    public static void isMade(){
+        System.out.println("Chocolate is made");
     }
 }
 
