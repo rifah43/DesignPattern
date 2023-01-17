@@ -1,7 +1,6 @@
 package FactoryMethod;
 
 public abstract class ChocolateMaker {
-    public String abstract makeChocolate();
-
+    public abstract ChocolateMaker makeObject();
+    public abstract String doneMaking();
 }
-
